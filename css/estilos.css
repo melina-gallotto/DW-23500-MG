@@ -99,11 +99,11 @@ ________________________________________
     margin: 70px;
     height: 100vh;
     grid-template-areas:
-    "portada-texto ambientes-portada-1 ambientes-portada-2"
-    "primer-paleta ambientes-portada-1 ambientes-portada-2"
-    "segunda-paleta ambientes-portada-1 ambientes-portada-2"
-    "tercer-paleta ambientes-portada-3 ambientes-portada-4"
-    "cuarta-paleta ambientes-portada-3 ambientes-portada-4";
+    "portada-texto ambientes-portada__1 ambientes-portada__2"
+    "primer-paleta ambientes-portada__1 ambientes-portada__2"
+    "segunda-paleta ambientes-portada__1 ambientes-portada__2"
+    "tercer-paleta ambientes-portada__3 ambientes-portada__4"
+    "cuarta-paleta ambientes-portada__3 ambientes-portada__4";
     grid-template-rows: 250px 1fr 1fr 1fr 1fr;
     grid-template-columns: 25% repeat (500px);
     grid-column-gap: 50px;
@@ -130,12 +130,16 @@ ________________________________________
     color: #4c2412;
 }
 .ambientes-portada__1{
-    grid-area: ambientes-portada-1;
+    grid-area: ambientes-portada__1;
     width: 100%;
     height: 100%;
 }
+.ambientes-portada__1:hover{
+    background-color: #4c2412;
+    cursor: pointer;
+}
 .ambientes-portada__2{
-    grid-area: ambientes-portada-2;
+    grid-area: ambientes-portada__2;
     /* 
     Las fotos no ocupan el 100% del área: Probé con justify y con width y height como se ve abajo:
     _________________________
@@ -146,6 +150,10 @@ ________________________________________
     width: 100%;
     height: 100%;
     */
+}
+.ambientes-portada__2:hover{
+    background-color: #754c24;
+    cursor: pointer;
 }
 #primer-paleta{
     grid-area: primer-paleta;
@@ -160,14 +168,22 @@ ________________________________________
     height: 100%;
 }
 .ambientes-portada__3{
-    grid-area: ambientes-portada-3;
+    grid-area: ambientes-portada__3;
     width: 100%;
     overflow: hidden;
 }
+.ambientes-portada__3:hover{
+    background-color: #c5b19e;
+    cursor: pointer;
+}
 .ambientes-portada__4{
-    grid-area: ambientes-portada-4;
+    grid-area: ambientes-portada__4;
     width: 100%;
     overflow: hidden;
+}
+.ambientes-portada__4:hover{
+    background-color: #d4b893;
+    cursor: pointer;
 }
 #tercer-paleta{
     grid-area: tercer-paleta;
