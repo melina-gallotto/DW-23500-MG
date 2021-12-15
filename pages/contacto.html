@@ -5,29 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DK.Interiores / Contacto</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
     <header>
-        <img src="./assets/img/Isologo.png" width="45px" alt="isologo">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</li>
-                <li> 
-                    <a href="./servicios.html">Servicios</a></li>
-                <li>
-                    <a href="./equipo.html">Equipo</a></li>
-                <li>
-                    <a href="./blog.html">Blog</a></li>
-                <li>
-                    <a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="contenedor-header">
+            <img src="./assets/img/Isologo.png" width="45px" alt="isologo">
+            <nav> <!--Barra de navegación principal-->
+                <ul>
+                    <li>
+                        <a href="../index.html">Home |</li>
+                    <li> 
+                        <a href="./servicios.html">Servicios |</a></li>
+                    <li>
+                        <a href="./equipo.html">Equipo |</a></li>
+                    <li>
+                        <a href="./blog.html">Blog |</a></li>
+                    <li>
+                        <a href="./contacto.html">Contacto |</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h1>CONTACTÁNOS, ESTAMOS PARA ASESORARTE</h1>
-        <p>Nuestro equipo está a diposición para brindarte la atención personalizada que tus espacios requieren, ¡escribinos!</p>
-        <div>
+    <main  class="portada-principal">
+        <section class="portada__texto">
+            <h1 class="titulo">CONTACTÁNOS, ESTAMOS PARA ASESORARTE</h1>
+            <p class="subtitulo">Nuestro equipo está a diposición para brindarte la atención personalizada que tus espacios requieren, ¡escribinos!</p>
+        </section>
+            <div class="contenido">
             <form action="">
                 <label for="nombre-apellido"></label><input type="text" name="nombre-apellido" placeholder="Nombre y Apellido">
                 <label for="email"></label><input type="email" name="email"placeholder="Email">
@@ -37,13 +43,14 @@
                 <input type="submit" value="Enviar">
             </form>
         </div>
-        <br>
     </main>
     <footer>
-        <a href="https://www.instagram.com/dk.interioresyespacios">dk.interioresyespacios</a>
-        <br>
-        <a href="https://wa.link/8k9u4w">(3541)389085</a>
-        <p>dk.interioresyespacios@gmail.com</p>
+        <div class="contenedor-footer">
+            <a href="https://www.instagram.com/dk.interioresyespacios">dk.interioresyespacios</a>
+            <br>
+            <a href="https://wa.link/8k9u4w">(3541)389085</a>
+            <p>dk.interioresyespacios@gmail.com</p>
+        </div>
     </footer>
 </body>
 </html>
