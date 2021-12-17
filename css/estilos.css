@@ -205,8 +205,8 @@ ________________________________________
     margin: 70px;
     height: 100vh;
     grid-template-areas:
-    "portada-texto1 portada-texto1" /*TITULO y SUBTÍTULO*/
-    "contenido-equipo__presentacion contenido-equipo__foto";
+    "portada__texto portada__texto" /*TITULO y SUBTÍTULO*/
+    "contenido__equipo--presentacion contenido__equipo--foto";
     grid-template-rows: 200px auto;
     grid-template-columns: repeat (500px);
     overflow: hidden;
