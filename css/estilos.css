@@ -67,11 +67,11 @@ color: white;
     align-content: center */
 } 
 /*Con flexbox no podía alinear .contenido con respecto a #paleta-cromatica*, con grid cambié el wireframe*/
-#paleta-cromatica{
+/*#paleta-cromatica{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-}
+}*/
 .contenedor-footer{
     /*NO FUNCIONABA: display: inline; cambié a flexbox*/
     display: flex;
@@ -134,10 +134,6 @@ ________________________________________
     width: 100%;
     height: 100%;
 }
-.ambientes-portada__1:hover{
-    background-color: #4c2412;
-    cursor: pointer;
-}
 .ambientes-portada__2{
     grid-area: ambientes-portada__2;
     /* 
@@ -151,51 +147,45 @@ ________________________________________
     height: 100%;
     */
 }
-.ambientes-portada__2:hover{
-    background-color: #754c24;
-    cursor: pointer;
-}
 #primer-paleta{
     grid-area: primer-paleta;
     background-color: #4c2412;
     width: 100%;
-    height: 100%;
+    height: 10%;
 }
 #segunda-paleta{
     grid-area: segunda-paleta;
     background-color: #754c24;
     width: 100%;
-    height: 100%;
+    height: 10%;
 }
 .ambientes-portada__3{
     grid-area: ambientes-portada__3;
     width: 100%;
     overflow: hidden;
 }
-.ambientes-portada__3:hover{
-    background-color: #c5b19e;
-    cursor: pointer;
+.ambientes-portada__3{
+    background-color: #c5b19e;;
 }
 .ambientes-portada__4{
     grid-area: ambientes-portada__4;
     width: 100%;
     overflow: hidden;
 }
-.ambientes-portada__4:hover{
-    background-color: #d4b893;
-    cursor: pointer;
+.ambientes-portada__4{
+    background-color: #d4b893;;
 }
 #tercer-paleta{
     grid-area: tercer-paleta;
     background-color: #c5b19e;
     width: 100%;
-    height: 100%;
+    height: 10%;
 }
 #cuarta-paleta{
     grid-area: cuarta-paleta;
     background-color: #d4b893;
     width: 100%;
-    height: 100%;
+    height: 10%;
 }
 /*ESTILOS servicios.html*/
 /*Modificar en el wireframe: Agregar servicios por tarjetas*/
