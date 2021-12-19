@@ -21,7 +21,7 @@ body{
     width: 100%;
 }
 .contenedor-header__isologo{ /*Debería aparecer en la esquina superior izquierda*/
-    width: 65px;
+    width: 8%;
     padding: 15px;
     align-self: flex-start;
 }
@@ -81,7 +81,7 @@ color: white;
     background-color: #4c2412;
     opacity: 40%;
     text-decoration: none;
-    height: 100px;
+    height: 10px;
     width: 100%;
     color: white /*NO FUNCIONA*/
 
