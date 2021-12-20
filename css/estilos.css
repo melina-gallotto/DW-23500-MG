@@ -21,7 +21,7 @@ body{
     width: 100%;
 }
 .contenedor-header__isologo{ /*Debería aparecer en la esquina superior izquierda*/
-    width: 8%;
+    width: 7%;
     padding: 15px;
     align-self: flex-start;
 }
@@ -216,8 +216,7 @@ ________________________________________
     /*Alinear imagen y texto - Este grid no reconoce las columnas*/
 }
 .contenido__equipo--foto{
-    grid-area: contenido-equipo__foto;
-    align-self: flex-end;
+    align-self: center;
 }
 /*ESTILOS blog.html*/
 /*ESTILOS contacto.html*/
