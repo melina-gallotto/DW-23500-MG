@@ -34,6 +34,8 @@ nav ul li{
     font-size: 20px;
     font-style: normal;
     list-style: none; /*Sigue subrayado incluso con text-decoration: none;*/
+}
+.color-blanco{
     color: white /*NO FUNCIONA*/
 }
 nav ul li:hover{
