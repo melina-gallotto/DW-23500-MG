@@ -55,15 +55,15 @@ nav ul li:hover{
     background-repeat: no-repeat;
 }
 .contenedor-footer{
-    position: sticky;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     background-color: #4c2412;
     opacity: 60%;
     height: 50px;
     width: 100%;
+    padding: 10px;
 }
 #grilla{
     display: grid;
@@ -177,32 +177,28 @@ nav ul li:hover{
 }
 /*Modificar en el wireframe: Agregar servicios por tarjetas*/
 /*ESTILOS equipo.html*/
-.grilla__equipo{
+.seccion__equipo{
     background-image: url(../assets/img/fondo.png);
     margin: 70px;
     height: 100vh;
-    grid-template-areas:
-    "portada__texto portada__texto" /*TITULO y SUBTÍTULO*/
-    "contenido__equipo--presentacion contenido__equipo--foto";
-    grid-template-rows: 200px auto;
-    grid-template-columns: repeat (500px);
-    overflow: hidden;
 }
 .contenido__equipo {
     background-color: #d4b9af;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 150px 30px;
+    padding: 20px 30px;
 }
 .contenido__equipo--presentacion{
     grid-area: contenido-equipo__presentacion;
     justify-self: center;
     align-self: center;
+    padding: 30px;
 }
 .contenido__equipo--foto{
     align-self: center;
+    padding-left: 20px;
 }
 /*ESTILOS blog.html*/
 .cards-blog{
