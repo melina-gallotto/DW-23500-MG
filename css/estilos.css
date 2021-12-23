@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Cinzel:wght@400;500&display=swap');
 /*ESTILOS index.html*/
-/*¿Menú desplegable? VER position y display para armarlo*/
 body{
     display: flex;
     flex-direction: column;
@@ -20,7 +19,7 @@ body{
     height: 100px;
     width: 100%;
 }
-.contenedor-header__isologo{ /*Debería aparecer en la esquina superior izquierda*/
+.contenedor-header__isologo{
     width: 7%;
     padding: 15px;
     align-self: flex-start;
@@ -33,25 +32,20 @@ nav ul li{
     padding: 2px 20px 10px 25px;
     font-size: 20px;
     font-style: normal;
-    list-style: none; /*Sigue subrayado incluso con text-decoration: none;*/
+    list-style: none;
 }
 .color-blanco{
-    color: white /*NO FUNCIONA*/
+    color: white
+}
+#menu-desplegable{
+    height: 30%;
+    width: 30%;
+    justify-content: flex-end;  /*NO FUNCIONA*/
 }
 nav ul li:hover{
     background-color: grey;
     cursor: pointer;
 }
-/* TAMPOCO FUNCIONA EL COLOR DEL NAV ASÍ:
-______________________________________________________
-.menu{
-list-style: none;
-}
-.menu__item{
-text-decoration: none;
-color: white;
-}
-*/
 .portada-principal{
     background-image: url(../assets/img/fondo.png);
     background-position: center;
@@ -60,43 +54,18 @@ color: white;
     background-size: cover;
     background-repeat: no-repeat;
 }
-/*
-.contenido{
-    margin: 50px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-content: center */
-} 
-/*Con flexbox no podía alinear .contenido con respecto a #paleta-cromatica*, con grid cambié el wireframe*/
-/*#paleta-cromatica{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}*/
 .contenedor-footer{
-    /*NO FUNCIONABA: display: inline; cambié a flexbox*/
+    position: sticky;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     background-color: #4c2412;
-    opacity: 40%;
-    text-decoration: none;
-    height: 10px;
+    opacity: 60%;
+    height: 50px;
     width: 100%;
-    color: white /*NO FUNCIONA*/
-
-} /*PRUEBA DE GRID en filas y columnas
-________________________________________
-.grid__template{
-    display: grid;
-    height: 1000px;
-    background-color:#0000ff;
-    grid-template-columns:repeat(3, 2fr); 
-    grid-template-rows: repeat(5, 2fr); 
-}*/
-#grilla{ /*Las fotos no ocupan el 100% del área ¿Cómo solucionarlo?)*/
+}
+#grilla{
     display: grid;
     margin: 70px;
     height: 100vh;
@@ -128,7 +97,6 @@ ________________________________________
     margin-top: 5px;
     margin-left: 50px;
     font-family: 'Alice', serif;
-    font-size: 20px;
     color: #4c2412;
 }
 .ambientes-portada__1{
@@ -138,16 +106,6 @@ ________________________________________
 }
 .ambientes-portada__2{
     grid-area: ambientes-portada__2;
-    /* 
-    Las fotos no ocupan el 100% del área: Probé con justify y con width y height como se ve abajo:
-    _________________________
-    display: flex;
-    justify-self: stretch;
-    align-self: stretch;
-    _________________________
-    width: 100%;
-    height: 100%;
-    */
 }
 #primer-paleta{
     grid-area: primer-paleta;
@@ -190,10 +148,37 @@ ________________________________________
     height: 10%;
 }
 /*ESTILOS servicios.html*/
+.cards-servicios{
+    width: 100%;
+    height: 30%;
+    background-color: #d4b9af94;
+    padding: 5%;
+}
+#menu__card__container{
+    width: 15rem;
+    background: none;
+    border: none;
+}
+.card-body{
+    height: auto;
+}
+.card-title{
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    font-style: bold;
+    color: #4c2412;
+    align-content: center;
+}
+.card-text{
+    font-family: 'Alice', serif;
+    font-size; 20px;
+    color: #4c2412;
+    align-content: center;
+}
 /*Modificar en el wireframe: Agregar servicios por tarjetas*/
 /*ESTILOS equipo.html*/
 .grilla__equipo{
-    display: grid;
+    background-image: url(../assets/img/fondo.png);
     margin: 70px;
     height: 100vh;
     grid-template-areas:
@@ -215,10 +200,15 @@ ________________________________________
     grid-area: contenido-equipo__presentacion;
     justify-self: center;
     align-self: center;
-    /*Alinear imagen y texto - Este grid no reconoce las columnas*/
 }
 .contenido__equipo--foto{
     align-self: center;
 }
 /*ESTILOS blog.html*/
+.cards-blog{
+    width: 100%;
+    height: 30%;
+    background-color: #d4b9af94;
+    padding: 5%;
+}
 /*ESTILOS contacto.html*/

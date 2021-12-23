@@ -18,37 +18,75 @@
             <div class="container">
                 <ul class="nav">
                     <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Home
+                    <a class="nav-link color-blanco" href="../index.html">Home
                         </a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="./servicios.html">Servicios
+                    <a class="nav-link color-blanco" href="./servicios.html">Servicios
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./equipo.html">Equipo
+                        <a class="nav-link color-blanco" href="./equipo.html">Equipo
                             </a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="./blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                        </li>
-                    </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-blanco" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-blanco" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./assets/img/menu.png" id="menu-desplegable">
+                        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../index.html">Home</a>
+                        <a class="dropdown-item" href="./servicios.html">Servicios</a>
+                        <a class="dropdown-item" href="./equipo.html">Equipo</a>
+                        <a class="dropdown-item" href="./blog.html">Blog</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./contacto.html">Contacto</a>
+                    </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
     <main  class="portada-principal">
         <!--INTRO A LA PÁGINA-->
         <section class="container">
-            <div class="col-mg- col-lg-11"></div>
+            <div class="col-lg-11"></div>
             <h1 class="titulo">¡TODOS LOS CONSEJOS QUE NECESITÁS!</h1>
-            <div class="col-mg- col-lg-1"></div>
+            <p class="subtitulo">En esta sección te contamos todos nuestros tips para que puedas integrar el diseño de interiores en tu día a día</p>
+            <div class="col-lg-1"></div>
         </section>
-        <div class="contenido">
-            <img src="../assets/img/blog-1.jpg" alt="blog-1-eventos" width="300px">
-            <p><strong>Brief del consejo de la semana</strong></p>
+        <div class="container-fluid cards-blog">
+            <div class="row d-flex justify-content-center">
+                <div class="card d-flex justify-content-center col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-5" id="menu__card__container">
+                    <img class="card-img-center" src="../assets/img/blog-1.jpg" alt="blog-1-eventos">
+                    <div class="card-body">
+                        <h2 class="card-title">¿Cómo organizar un evento?</h2>
+                        <p class="card-text font-weight-normal">Brief del consejo de la semana</p>
+                        <p class="card-text font-weight-normal btn btn-secondary" style="color: white;">VER MÁS</p>
+                    </div>
+                </div>
+                <div class="card d-flex justify-content-center col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-5" id="menu__card__container">
+                    <img class="card-img-center" src="../assets/img/blog-2.jpg" alt="blog-2-decoración">
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold">Tu dpto al estilo suite</h2>
+                        <p class="card-text font-weight-normal">Te contamos los secretos para decorar tus espacios según las últimas tendencias</p>
+                        <p class="card-text font-weight-normal btn btn-secondary" style="color: white;">VER MÁS</p>
+                    </div>
+                </div>
+                <div class="card d-flex justify-content-center col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-5" id="menu__card__container">
+                    <img class="card-img-center" src="../assets/img/blog-3.jpg" alt="blog-3-muebles">
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold">Los muebles más innovadores del 2021</h2>
+                        <p class="card-text font-weight-normal">La creatividad no tiene límites</p>
+                        <p class="card-text font-weight-normal btn btn-secondary" style="color: white;">VER MÁS</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -59,6 +97,8 @@
             <p>dk.interioresyespacios@gmail.com</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
