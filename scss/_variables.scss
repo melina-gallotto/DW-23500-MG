@@ -1,15 +1,22 @@
 $font-general:  Cinzel;
 $font-secundaria: Alice;
 $color-general: #ffffff;
-$paleta-1:#4c2412;
-$paleta-2:#754c24;
-$paleta-3:#c5b19e;
-$paleta-4:#d4b893;
-
+$paleta-caja: (
+    "1":#4c2412;
+    "2":#754c24;
+    "3":#c5b19e;
+    "4":#d4b893;
+)
 /*GOOGLE FONTS*/ 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Cinzel:wght@400;500&display=swap');
 /*ESTILOS index.html*/
+@mixin flexCenter{
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    }
 body{
     display: flex;
     flex-direction: column;
@@ -20,14 +27,13 @@ body{
     position: sticky;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     background-color: #4c2412;
     opacity: 40%;
     height: 100px;
     width: 100%;
 }
-.contenedor-header__isologo{
+    $--isologo{
     width: 7%;
     padding: 15px;
     align-self: flex-start;
@@ -65,7 +71,7 @@ nav ul li:hover{
 .contenedor-footer{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    @include flexCenter;
     text-align: center;
     background-color: #4c2412;
     opacity: 60%;
@@ -99,24 +105,24 @@ nav ul li:hover{
     margin-left: 50px;
     font-family: $font-general;
     font-size: 40px;
-    color: $paleta-1;
+    color: map-get($paleta-caja, 1);
 }
 .subtitulo{
     margin-top: 5px;
     margin-left: 50px;
     font-family: 'Alice', serif;
-    color: $paleta-1;
+    color: map-get($paleta-caja, 1);
 }
 #primer-paleta{
     grid-area: primer-paleta;
-    background-color: $paleta-1;
+    background-color: map-get($map: paleta-caja, $key: 1);
     width: 100%;
     height: 10%;
 }
 #segunda-paleta{
     @extend #primer-paleta;
     grid-area: segunda-paleta;
-    background-color: $paleta-2;
+    background-color: map-get($map: paleta-caja, $key: 2);
 }
 .ambientes-portada
     &--1{
@@ -131,23 +137,21 @@ nav ul li:hover{
     grid-area: ambientes-portada__3;
     width: 100%;
     overflow: hidden;
-    background-color: $paleta-3;
 }
     &--4{
     grid-area: ambientes-portada__4;
     width: 100%;
     overflow: hidden;
-    background-color: $paleta-4;
 }
 #tercer-paleta{
     @extend #primer-paleta;
     grid-area: tercer-paleta;
-    background-color: $paleta-3;
+    background-color: map-get($map: paleta-caja, $key: 3);
 }
 #cuarta-paleta{
     @extend #primer-paleta;
     grid-area: cuarta-paleta;
-    background-color: $paleta-4;
+    background-color: map-get($map: paleta-caja, $key: 4);
 }
 /*ESTILOS servicios.html*/
 .cards-servicios{
@@ -169,13 +173,13 @@ nav ul li:hover{
     font-size: 30px;
     font-style: bold;
     color: $paleta-1;
-    align-content: center;
+    @include flexCenter;
 }
 .card-text{
     font-family: $font-secundaria;
     font-size; 20px;
     color: $paleta-1;
-    align-content: center;
+    @include flexCenter;
 }
 /*Modificar en el wireframe: Agregar servicios por tarjetas*/
 /*ESTILOS equipo.html*/
@@ -185,21 +189,19 @@ nav ul li:hover{
     height: 100vh;
 }
 .contenido__equipo {
-    background-color: $paleta-4;
+    background-color: map-get($map: paleta-caja, $key: 4);
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     padding: 20px 30px;
 }
 .contenido__equipo--presentacion{
     grid-area: contenido-equipo__presentacion;
-    justify-self: center;
-    align-self: center;
+    @include flexCenter;
     padding: 30px;
 }
 .contenido__equipo--foto{
-    align-self: center;
+    @include flexCenter;
     padding-left: 20px;
 }
 /*ESTILOS blog.html*/
